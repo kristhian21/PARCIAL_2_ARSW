@@ -34,6 +34,7 @@ initAndRegisterInServer = function(){
     }).then(
             function(playersCont){                
                 alert("Competitor registered successfully! Numero de jugadores: "+playersCont);
+                loadCompetitorsFromServer();
                 verifyCont();
             },
             function(err){
@@ -81,7 +82,6 @@ function verifyCont(){
         playersCont = data.length;
         if(data.length == 5){
             console.log("ENTROO");
-            loadCompetitorsFromServer();
             data.forEach(car => {
                 stompClient.send("/topic/car"+car.number, {}, JSON.stringify({car:car.number,xpos:car.xpos,totalPlayers:playersCont})); 
             });
