@@ -1,0 +1,24 @@
+
+
+
+* CONDICIÓN DE CARRERA 1:
+
+	REGIÓN CRÍTICA: Que dos carros crucen al mismo tiempo la coordenada 640
+
+	POSIBLES INCONSISTENCIAS (SI NO SE ELIMINA): Que haya inconsistencia en cuanto a quien es el ganador
+        y que se genere un error cuando ambos carros intenen declararse cada uno como el ganador
+
+	SOLUCIÓN: sincronizar el recurso de ganador y la peticion relacionada con ese recurso para evitar colisiones
+
+
+* CONDICIÓN DE CARRERA 2:
+
+        REGIÓN CRÍTICA:
+
+        POSIBLES INCONSISTENCIAS (SI NO SE ELIMINA):
+
+        SOLUCIÓN:
+
+
+....
+
